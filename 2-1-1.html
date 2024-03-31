@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.1 感知->形态</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 10px;
+            font-size: 24px;
+            text-align: left;
+            padding-left: 10px; /* 添加左边距，使标题与屏幕左侧有一定间距 */
+        }
+
+        textarea {
+            width: 90%; /* 将文本框宽度设置为屏幕宽度的90% */
+            height: 120px; 
+            padding: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px; /* 适当调小字体大小 */
+            margin: 10px auto; /* 居中并添加上下边距 */
+            display: block; /* 显示为块级元素 */
+        }
+
+        .video-container {
+            position: relative;
+            width: 90%; /* 将视频容器宽度设置为屏幕宽度的90% */
+            margin: 20px auto; /* 居中并添加上下边距 */
+            padding-top: 50%; /* 设置容器高度为宽度的50% */
+            overflow: hidden; /* 隐藏溢出部分 */
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* 将 iframe 宽度设置为100% */
+            height: 100%; /* 将 iframe 高度设置为100% */
+        }
+
+        @media only screen and (min-width: 600px) {
+            /* 在屏幕宽度大于等于600px时，调整标题的字体大小 */
+            h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>2.1 感知->形态  视频1</h1>
+    <textarea rows="4">文字说明。</textarea>
+    <div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1PtAa2c2QvZwwf2RbU5Eu7xc3j7eg2OHQ/preview" frameborder="0"></iframe>
+    </div>
+</body>
+</html>
